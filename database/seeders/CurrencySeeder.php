@@ -56,7 +56,7 @@ class CurrencySeeder extends Seeder
                 'char_code' => 'EUR',
                 'nominal' => 1,
                 'name' => 'Евро',
-                'value' => 44.5909,
+                'value' => 90.17,
             ]);
         DB::table('currency')->insert([
                 'char_code' => 'CNY',
