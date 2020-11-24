@@ -19,7 +19,7 @@ php artisan db:seed --class=CurrencySeeder
 ### 3. Запуск
 ```
 php artisan serve
-npm run build
+npm run dev
 ```
 Сайт будет доступен по адресу
 ```
