@@ -13,3 +13,4 @@ yarn-error.log
 .idea/
 .env
 .styleci.yml
+public/js/app.js

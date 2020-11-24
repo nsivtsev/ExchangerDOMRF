@@ -5,7 +5,7 @@
         </div>
         <div class="container">
             <span>Конвертировать из </span>
-            <el-input placeholder="" class="currency_input" v-model="fromValue" @change="convert"/>
+            <el-input placeholder="" class="currency_input" v-model="fromValue" @input="convert"/>
             <el-select v-model="fromCurrency" placeholder="Выберите валюту" @change="convert" :default-first-option="true">
                 <el-option
                     v-for="item in currencies"
@@ -65,7 +65,7 @@ export default {
             })
         },
         convert() {
-            if (this.toCurrency) {
+            if (this.toCurrency && this.fromValue) {
                 let rubEqFrom = Number(this.fromValue) * (Number(this.fromCurrency.value) / Number(this.fromCurrency.nominal))
                 this.toValue = rubEqFrom / (Number(this.toCurrency.value) / Number(this.toCurrency.nominal))
             }
